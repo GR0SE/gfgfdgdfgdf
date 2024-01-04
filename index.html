@@ -117,11 +117,11 @@
                 </div>
                 <nav class="header-nav">
                     <ul class="header-nav-list">
-                        <li><a href="#">Продукты</a></li>
+                        <li><a href="#products">Продукты</a></li>
                         <li><a href="#">Решения</a></li>
                         <li><a href="#">Услуги</a></li>
                         <li><a href="#">О нас</a></li>
-                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#contact">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="header-rightside">
@@ -158,10 +158,10 @@
                 </p>
             </div>
         </section>
-        <section class="section-products-wrapper">
+        <section class="section-products-wrapper" id="products">
             <div class="products">
                 <div class="section-products-head">
-                    <h2 class="products-title">Услуги</h2>
+                    <h2 class="products-title">Продукты</h2>
                     <p class="products-title-info">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Ullam repellat, animi sunt molestias qui doloremque
@@ -174,7 +174,10 @@
                 <div class="product-container-wrapper">
                     <div class="product-container">
                         <div class="product-img-wraper">
-                            <button class="button-view-deteil">
+                            <button
+                                onclick="location.href='#automation'"
+                                class="button-view-deteil"
+                                id="open-automation">
                                 Deteil view
                             </button>
                             <img
@@ -182,7 +185,7 @@
                                 src="./assets/image/Rectangle 2back.jpg"
                                 alt="" />
                         </div>
-                        <h4>BACK END разработка</h4>
+                        <h4>Автоматизация и управление зданиями (BMS)</h4>
                     </div>
                     <div class="product-container">
                         <div class="product-img-wraper">
@@ -194,7 +197,7 @@
                                 src="./assets/image/front.jpg"
                                 alt="front" />
                         </div>
-                        <h4>FRONT END разработка</h4>
+                        <h4>Smart учет ресурсов</h4>
                     </div>
                     <div class="product-container">
                         <div class="product-img-wraper">
@@ -206,7 +209,7 @@
                                 src="./assets/image/sys.jpg"
                                 alt="front" />
                         </div>
-                        <h4>Cистемная интеграция</h4>
+                        <h4>Интернет вещей (IoT). Уникальные проекты</h4>
                     </div>
                     <div class="product-container">
                         <div class="product-img-wraper">
@@ -218,7 +221,7 @@
                                 src="./assets/image/front.jpg"
                                 alt="front" />
                         </div>
-                        <h4>Cистемная интеграция</h4>
+                        <h4>Управление данными. Платформы</h4>
                     </div>
                     <div class="product-container">
                         <div class="product-img-wraper">
@@ -230,7 +233,7 @@
                                 src="./assets/image/design.jpg"
                                 alt="front" />
                         </div>
-                        <h4>Услуги дизайна</h4>
+                        <h4>2D/3D Дизайн</h4>
                     </div>
                     <div class="product-container">
                         <div class="product-img-wraper">
@@ -242,7 +245,7 @@
                                 src="./assets/image/front.jpg"
                                 alt="front" />
                         </div>
-                        <h4>back</h4>
+                        <h4>Аппаратное обеспечение</h4>
                     </div>
                     <div class="product-container">
                         <div class="product-img-wraper">
@@ -254,12 +257,24 @@
                                 src="./assets/image/front.jpg"
                                 alt="front" />
                         </div>
-                        <h4>back</h4>
+                        <h4>Консультирование</h4>
+                    </div>
+                    <div class="product-container">
+                        <div class="product-img-wraper">
+                            <button class="button-view-deteil">
+                                Detail view
+                            </button>
+                            <img
+                                class="product-img"
+                                src="./assets/image/front.jpg"
+                                alt="front" />
+                        </div>
+                        <h4>Освещение. Промышленные и коммерческие системы</h4>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="section-contact-us">
+        <section class="section-contact-us" id="contact">
             <div class="contact-us-wrapper">
                 <div class="section-contact-us-head">
                     <h2>Контакты</h2>
@@ -271,9 +286,12 @@
                     </p>
                 </div>
                 <div class="contact-iformation">
-                    <input type="text" placeholder="Имя" />
-                    <input type="text" placeholder="Email" />
-                    <input type="text" placeholder="Номер телефона" />
+                    <input type="text" name="name" placeholder="Имя" />
+                    <input type="email" name="email" placeholder="Email" />
+                    <input
+                        type="number"
+                        name="phonenumber"
+                        placeholder="Номер телефона" />
                 </div>
                 <div class="contact-extra-information">
                     <textarea
@@ -291,5 +309,47 @@
                 </div>
             </div>
         </section>
+        <section class="container-information-automation" id="automation">
+            <div class="iformation-wraper">
+                <!-- <div class="inf-side-topleft"></div>
+                <div class="inf-side-topright"></div>
+                <div class="inf-side-botomleft"></div>
+                <div class="inf-side-botomright"></div> -->
+                <div class="iformation">
+                    <h3>Автоматизация и управление зданиями (BMS)</h3>
+                    <h4>
+                        Мы разработаем систему управления Вашими зданиями от А
+                        до Я, начиная со сбора и организации данных до
+                        разработки пользовательского интерфейса. Подробно:
+                    </h4>
+                    <ul>
+                        <li>
+                            Электроэнергия: Контроль вводов и щитов
+                            распределения
+                        </li>
+                        <li>Отопление, вентиляция, кондиционирование</li>
+                        <li>Управление микроклиматом</li>
+                        <li>Водоснабжение и водоотведение</li>
+                        <li>Smart освещение</li>
+                        <li>
+                            Безопасность: Контроль доступа и видеонаблюдение
+                        </li>
+                        <li>Лифты, эскалаторы, вспомогательные системы</li>
+                        <li>
+                            Контроллеры, Протоколы, Разработка драйверов,
+                            Управление данными
+                        </li>
+                        <li>
+                            Диспетчеризация: Панели управления, Аналитика и
+                            отчетность
+                        </li>
+                        <li>
+                            Контроль оборудования, Менеджмент аварий и аномалий
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <script src="./assets/js/index.js"></script>
     </body>
 </html>
