@@ -58,6 +58,14 @@
         display: inline-flex;
         justify-content: space-between;
         width: 100%;
+        a {
+            font-family: Open Sans;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: uppercase;
+        }
     }
     .header-nav {
         width: 390px;

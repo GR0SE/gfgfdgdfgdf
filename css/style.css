@@ -37,6 +37,14 @@
           justify-content: space-between;
   width: 100%;
 }
+.header-wrapper .header-nav-list a {
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
 .header-wrapper .header-nav {
   width: 390px;
 }
@@ -190,6 +198,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
   font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .head p {
   -webkit-animation: moveRight 0.5s ease-out 0.8s backwards;
