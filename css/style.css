@@ -80,6 +80,63 @@
   cursor: pointer;
 }
 
+@-webkit-keyframes moveLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotateX(-100%);
+            transform: rotateX(-100%);
+  }
+}
+
+@keyframes moveLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotateX(-100%);
+            transform: rotateX(-100%);
+  }
+}
+@-webkit-keyframes moveRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+@keyframes moveRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+@-webkit-keyframes moveTop {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+@keyframes moveTop {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+@-webkit-keyframes moveDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
+@keyframes moveDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -125,6 +182,8 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 }
 .head h1 {
   color: #fff;
+  -webkit-animation: moveTop 0.5s ease-out 0.8s backwards;
+          animation: moveTop 0.5s ease-out 0.8s backwards;
   font-family: Open Sans;
   font-size: 48px;
   font-style: normal;
@@ -133,6 +192,8 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
   text-transform: uppercase;
 }
 .head p {
+  -webkit-animation: moveRight 0.5s ease-out 0.8s backwards;
+          animation: moveRight 0.5s ease-out 0.8s backwards;
   color: #fff;
   text-align: center;
   font-family: Open Sans;
@@ -361,4 +422,20 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.animate-left {
+  -webkit-animation: moveLeft 0.4s ease-out 0s forwards;
+          animation: moveLeft 0.4s ease-out 0s forwards;
+  opacity: 1;
+}
+
+.animate-down {
+  -webkit-animation: moveDown 0.4s ease-out 0s backwards;
+          animation: moveDown 0.4s ease-out 0s backwards;
+  opacity: 1;
 }
