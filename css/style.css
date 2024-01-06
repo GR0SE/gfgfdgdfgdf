@@ -438,8 +438,8 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 }
 
 .animate-left {
-  -webkit-animation: moveLeft 0.4s ease-out 0s forwards;
-          animation: moveLeft 0.4s ease-out 0s forwards;
+  -webkit-animation: moveLeft 0.5s ease-out 0s forwards;
+          animation: moveLeft 0.5s ease-out 0s forwards;
   opacity: 1;
 }
 
@@ -447,4 +447,19 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
   -webkit-animation: moveDown 0.4s ease-out 0s backwards;
           animation: moveDown 0.4s ease-out 0s backwards;
   opacity: 1;
+}
+
+.slider_main {
+  background-color: blue;
+  height: 100px;
+  max-width: 1440px;
+}
+.slider_main .swiper-slide {
+  background-color: red;
+  width: 100px;
+}
+
+.slider_wrapper {
+  -webkit-transition: all 0.5s linear !important;
+  transition: all 0.5s linear !important;
 }

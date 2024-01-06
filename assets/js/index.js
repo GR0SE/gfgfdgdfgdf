@@ -61,3 +61,34 @@ document.addEventListener("DOMContentLoaded", function () {
     if (products) products.classList.add("hidden");
     if (contact) contact.classList.add("hidden");
 });
+
+// !!
+// var mySwiper = new Swiper(".swiper-container", {
+//     // Параметры Swiper
+//     loop: true,
+//     pagination: {
+//         el: ".swiper-pagination",
+//     },
+//     navigation: {
+//         nextEl: ".swiper-button-next",
+//         prevEl: ".swiper-button-prev",
+//     },
+//     scrollbar: {
+//         el: ".swiper-scrollbar",
+//     },
+// });
+
+const sliderMain = new Swiper(".slider_main", {
+    // freeMode: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+
+    centerdSlides: true,
+    mousewheel: true,
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
+    // effect: fade,
+});

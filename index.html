@@ -3,6 +3,9 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="./assets/libs/swiper/swiper-bundle.min.css" />
         <link rel="stylesheet" href="./css/style.min.css" />
         <title>Document</title>
     </head>
@@ -309,6 +312,24 @@
                 </div>
             </div>
         </section>
+        <div class="swiper mySwiper">
+            <!-- ... -->
+        </div>
+
+        <section class="slider-section">
+            <div class="swiper slider slider_main">
+                <button class="swiper-button-prev" id="prevButton"></button>
+                <div class="swiper-wrapper slider_wrapper">
+                    <div class="swiper-slide slider__ithem">1234</div>
+                    <div class="swiper-slide slider__ithem">1234</div>
+                    <div class="swiper-slide slider__ithem">1234</div>
+                    <div class="swiper-slide slider__ithem">1234</div>
+                    <div class="swiper-slide slider__ithem">1234</div>
+                    <div class="swiper-slide slider__ithem">1234</div>
+                </div>
+                <button class="swiper-button-next" id="nextButton"></button>
+            </div>
+        </section>
         <section class="container-information-automation" id="automation">
             <div class="iformation-wraper">
                 <!-- <div class="inf-side-topleft"></div>
@@ -350,6 +371,7 @@
                 </div>
             </div>
         </section>
+        <script src="/assets/libs/swiper/swiper-bundle.min.js"></script>
         <script src="./assets/js/index.js"></script>
     </body>
 </html>
