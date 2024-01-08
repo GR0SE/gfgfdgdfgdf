@@ -275,8 +275,8 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 }
 .section-products-wrapper .product-container-wrapper .product-container .product-img {
   position: relative;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
   z-index: 3;
   height: 100%;
   -o-object-fit: cover;
@@ -294,8 +294,8 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 }
 
 .product-img-wraper:hover .product-img {
-  -webkit-transform: translateY(105%);
-          transform: translateY(105%);
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
   cursor: pointer;
 }
 
@@ -448,8 +448,8 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 }
 
 .animate-left {
-  -webkit-animation: moveLeft 0.5s ease-out 0s forwards;
-          animation: moveLeft 0.5s ease-out 0s forwards;
+  -webkit-animation: moveLeft 0.4s ease-out 0s forwards;
+          animation: moveLeft 0.4s ease-out 0s forwards;
   opacity: 1;
 }
 
