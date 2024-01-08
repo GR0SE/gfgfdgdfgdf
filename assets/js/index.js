@@ -85,7 +85,7 @@ const sliderMain = new Swiper(".slider_main", {
         prevEl: ".swiper-button-prev",
     },
 
-    centerdSlides: true,
+    // centerdSlides: true,
     mousewheel: true,
     slidesPerView: 3,
     spaceBetween: 30,
