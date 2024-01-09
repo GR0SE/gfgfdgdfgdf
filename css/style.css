@@ -472,3 +472,57 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
   -webkit-transition: all 0.5s linear !important;
   transition: all 0.5s linear !important;
 }
+
+.section-target {
+  width: 100vw;
+  background-color: black;
+}
+.section-target h2 {
+  margin-bottom: 40px;
+  text-align: center;
+  color: #fff;
+  font-family: Open Sans;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.section-target h3 {
+  color: #fff;
+}
+.section-target p {
+  color: #fff;
+}
+
+.target-wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 1440px;
+  margin: 0 auto;
+}
+.target-wraper .target-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 55px;
+}
+.target-wraper .target-contain {
+  display: grid;
+  justify-items: center;
+  height: 128px;
+  width: 256px;
+}
+.target-wraper .target-contain h3 {
+  text-align: center;
+}
+.target-wraper .target-contain p {
+  text-align: center;
+}
