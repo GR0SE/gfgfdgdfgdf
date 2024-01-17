@@ -87,8 +87,13 @@ const sliderMain = new Swiper(".slider_main", {
 
     // centerdSlides: true,
     mousewheel: true,
-    slidesPerView: 3,
+    slidesPerView: 4,
     spaceBetween: 30,
     loop: true,
+
+    // autoplay: {
+    //     delay: 2500, // задержка между переключениями слайдов
+    //     disableOnInteraction: false, // продолжать автопроигрывание после взаимодействия пользователя
+    // },
     // effect: fade,
 });

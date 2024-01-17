@@ -1,6 +1,7 @@
 @import "layout/header";
 @import "layout/button";
 @import "layout/animate";
+@import "layout/slider";
 @import "base/mixins";
 @import "base/keyframes";
 
@@ -192,12 +193,22 @@ input[type="number"] {
 // .solution-comtainer-6:hover {
 //     cursor: pointer;
 // }
+.head::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
 .head {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100vw;
-    height: 100vh;
+    height: 98vh;
     background-image: url("../assets/image/head1.jpg");
     align-items: center;
     background-repeat: no-repeat;
@@ -205,6 +216,8 @@ input[type="number"] {
     div {
     }
     h1 {
+        position: relative;
+        z-index: 2;
         color: #fff;
         animation: moveTop 0.5s ease-out 0.8s backwards;
         font-family: Open Sans;
@@ -216,6 +229,8 @@ input[type="number"] {
         margin-bottom: 10px;
     }
     p {
+        position: relative;
+        z-index: 2;
         animation: moveRight 0.5s ease-out 0.8s backwards;
         color: #fff;
         text-align: center;
@@ -437,19 +452,6 @@ input[type="number"] {
     opacity: 1;
 }
 
-.slider_main {
-    background-color: blue;
-    height: 100px;
-    max-width: 1440px;
-    .swiper-slide {
-        background-color: red;
-    }
-}
-
-.slider_wrapper {
-    transition: all 0.5s linear !important;
-}
-
 .section-target {
     width: 100vw;
     background-color: black;
@@ -476,7 +478,7 @@ input[type="number"] {
     display: flex;
 
     flex-direction: column;
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
     .target-block {
         display: flex;
@@ -488,11 +490,24 @@ input[type="number"] {
         justify-items: center;
         height: 128px;
         width: 256px;
+        img {
+        }
         h3 {
-            text-align: center;
+            height: 43px;
+            ont-family: Open Sans;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
         }
         p {
+            height: 43px;
             text-align: center;
+            font-family: Open Sans;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
         }
     }
 }
