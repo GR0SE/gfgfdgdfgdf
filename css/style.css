@@ -216,17 +216,6 @@
      object-fit: cover;
 }
 
-.head-background {
-  z-index: -1;
-  position: absolute;
-  margin-top: -300px;
-  margin-left: 0px;
-  width: 125%;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 @-webkit-keyframes moveLeft {
   0% {
     opacity: 0;
