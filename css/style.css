@@ -105,7 +105,6 @@
 
 .slider-section {
   position: relative;
-  background-image: url("../assets/image/slider/b2.jpg");
   background-position: -8px -1051.95px;
   background-size: 100.753% 484.183%;
   background-repeat: no-repeat;
@@ -206,6 +205,28 @@
   transition: all 0.5s linear !important;
 }
 
+.slider-background {
+  z-index: -1;
+  position: absolute;
+  margin-top: -300px;
+  margin-left: 0px;
+  width: 125%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.head-background {
+  z-index: -1;
+  position: absolute;
+  margin-top: -300px;
+  margin-left: 0px;
+  width: 125%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 @-webkit-keyframes moveLeft {
   0% {
     opacity: 0;
@@ -296,12 +317,25 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 .head::before {
   content: "";
   position: absolute;
+  width: 100vw;
+  height: 98vh;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.7);
-  z-index: 1;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+
+.head-background {
+  z-index: -1;
+  position: absolute;
+  margin-top: -100px;
+  margin-left: 300px;
+  width: 135%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .head {
@@ -317,7 +351,6 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
           justify-content: center;
   width: 100vw;
   height: 98vh;
-  background-image: url("../assets/image/head1.jpg");
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
