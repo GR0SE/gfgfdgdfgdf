@@ -88,6 +88,27 @@
   cursor: pointer;
 }
 
+.head-button {
+  z-index: 5;
+  border: solid 1px #fff;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(255, 254, 254);
+  width: 147px;
+  max-height: 47px;
+  margin-top: 10px;
+  padding: 10px 20px;
+  margin-right: 20px;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  text-decoration-color: #fff;
+  cursor: pointer;
+}
+
 .swiper-button-prev::after,
 .swiper-rtl .swiper-button-next::after {
   content: "" !important;
@@ -377,6 +398,14 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
   font-weight: 400;
   line-height: normal;
 }
+.head .head-button-wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 
 .section-products-wrapper {
   width: 100vw;
@@ -459,11 +488,28 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
   cursor: pointer;
 }
 
+.section-contact-us::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: -3;
+}
+
 .section-contact-us {
   width: 100vw;
-  background-color: black;
   padding-top: 80px;
   padding-bottom: 100px;
+}
+.section-contact-us .contact-us-img-wrapper {
+  position: absolute;
+  z-index: -4;
+}
+.section-contact-us .contact-us-img-wrapper img {
+  margin-top: -800px;
 }
 .section-contact-us .contact-us-wrapper {
   max-width: 1440px;
@@ -676,6 +722,99 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
   line-height: normal;
 }
 .target-wraper .target-contain p {
+  height: 43px;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.about-us-section {
+  padding: 69px 0 0px 0;
+  background-color: #000000;
+}
+.about-us-section .about-us-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about-us-section .about-us-wrapper h2 {
+  margin-bottom: 40px;
+  text-align: center;
+  color: #fff;
+  font-family: Open Sans;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.about-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 1440px;
+}
+
+.about-us-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.about-us-block .about-us-contain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 350px;
+  height: 300px;
+}
+.about-us-block .about-us-contain img {
+  height: 33%;
+}
+.about-us-block .about-us-contain h3 {
+  margin-top: 30px;
+  color: #fff;
+  height: 43px;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: centr;
+}
+.about-us-block .about-us-contain p {
+  color: #fff;
   height: 43px;
   text-align: center;
   font-family: Open Sans;
